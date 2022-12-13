@@ -23,7 +23,7 @@
 <!-- ## Position observer and animation We add an element with id `top-page` that we can reference later for scrolling. We use `amp-position-observer` to start the animation when the user starts to scroll and the element at the top is no longer visible. -->
  <h2 class="target"> <a class="target-anchor" id="top"></a> This Mobile<amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"> </amp-position-observer> </h2>
  <!-- We use 2 `amp-animation` elements to trigger the visibility of the button. The first one is for making the button visible... -->
- <amp-img src="header.svg" width="30" height="30"></amp-img>
+ <amp-img layout="responsive">src="header.svg" width="30" height="30"></amp-img>
  <amp-animation id="showAnim" layout="nodisplay">
  <script type="application/json"> { "duration": "200ms", "fill": "both", "iterations": "1", "direction": "alternate", "animations": [ { "selector": "#scrollToTopButton", "keyframes": [ { "opacity": "1", "visibility": "visible" } ] } ] } </script> </amp-animation> 
  <!-- ... and the second one is for adding the button.--> 
