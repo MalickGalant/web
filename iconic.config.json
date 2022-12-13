@@ -1,0 +1,24 @@
+{
+  // The human-readable name of the app.
+  "name": "My Sex App",
+
+  // The project type of the app. The CLI uses this value to determine which
+  // commands and command options are available, what to output for help
+  // documentation, and what to use for web asset builds and the dev server.
+  "type": "angular",
+
+  // The App ID for Appflow.
+  "id": "sexapp",
+
+  // Configuration object for integrations such as Cordova and Capacitor.
+  "integrations": {
+    "cordova": {
+      ...
+    }
+  },
+
+  // Hook configuration--see the Hooks section below for details.
+  "hooks": {
+    ...
+  }
+}
