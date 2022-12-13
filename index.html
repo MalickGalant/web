@@ -1,10 +1,10 @@
 <!--- preview: default teaserImage: '/static/samples/img/teaser/scroll_to_top.jpg' author: kul3r4 --->
- <!-- ## Introduction [amp-position-observer](/content/amp-dev/documentation/components/reference/amp-position-observer-v0.1.md) combined with [amp-animation](/content/amp-dev/documentation/components/reference/amp-animation-v0.1.md) can be used to implement a scroll to top button. This pattern is often used in e-commerce pages where the user has to scroll through a long list of items. --> <!-- --> 
+<!-- ## Introduction [amp-position-observer](/content/amp-dev/documentation/components/reference/amp-position-observer-v0.1.md) combined with [amp-animation](/content/amp-dev/documentation/components/reference/amp-animation-v0.1.md) can be used to implement a scroll to top button. This pattern is often used in e-commerce pages where the user has to scroll through a long list of items. --> <!-- --> 
 <!doctype html>
  <html ⚡ lang="en">
 <head>
  <meta charset="utf-8">
- <title>Scroll Page</title>
+ <title>Scroll Web App</title>
  <script async src="https://cdn.ampproject.org/v0.js"></script> 
 <!-- ## Setup -->
  <!-- Import amp-position-observer extension --> 
@@ -23,6 +23,7 @@
 <!-- ## Position observer and animation We add an element with id `top-page` that we can reference later for scrolling. We use `amp-position-observer` to start the animation when the user starts to scroll and the element at the top is no longer visible. -->
  <h2 class="target"> <a class="target-anchor" id="top"></a> This Mobile<amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"> </amp-position-observer> </h2>
  <!-- We use 2 `amp-animation` elements to trigger the visibility of the button. The first one is for making the button visible... -->
+ <amp-img src="header.svg" width="30" height="30"></amp-img>
  <amp-animation id="showAnim" layout="nodisplay">
  <script type="application/json"> { "duration": "200ms", "fill": "both", "iterations": "1", "direction": "alternate", "animations": [ { "selector": "#scrollToTopButton", "keyframes": [ { "opacity": "1", "visibility": "visible" } ] } ] } </script> </amp-animation> 
  <!-- ... and the second one is for adding the button.--> 
