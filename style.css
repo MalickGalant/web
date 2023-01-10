@@ -1,3 +1,22 @@
+.video-ratio-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.video-ratio-wrapper:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 .sponsored-post {
     background-color: #fffdeb;
     font-family: sans-serif;
