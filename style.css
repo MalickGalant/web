@@ -1,0 +1,45 @@
+.sponsored-post {
+    background-color: #fffdeb;
+    font-family: sans-serif;
+    padding: 10px 20px 10px 20px;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 100px;
+    float: left;
+    margin: 0 20px 10px 0;
+    background-image: url([%Image%]);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+a {
+    color: #0086b3;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0 10px 0;
+}
+
+.attribution {
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #ffd724;
+    border-radius: 2px;
+    padding: 4px;
+}
